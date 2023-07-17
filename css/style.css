@@ -84,17 +84,14 @@ header .box-violet{
   background-color: #228B21;
   border: 2px dashed black;
 }
-footer{
-  width: 100%;
-  height: 770px;
-  background-color: #23272A;
-}
-.section-top{
+
+footer .section-top{
   width: 100%;
   height: 655px;
   border-bottom: 2px solid #CCCECE;
   display: flex;
   justify-content: center;
+  background-color: #23272A;
 }
 
 .col-red{
@@ -112,4 +109,32 @@ footer .col{
   border: 2px dashed white;
   margin-top: 10px;
   margin-bottom: 42px;
+}
+footer .section-down{
+  width: 100%;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #23272A;
+}
+.footer-bottom{
+  width: 1247px;
+  height: 82px;
+  background-color: #7FFFD3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-logo{
+  width: 68px;
+  height: 36px;
+  background-color: #FFB6C0;
+  border: 2px dashed black;
+}
+.bottom-bottone{
+  width: 94px;
+  height: 36px;
+  background-color: #FFB6C0;
+  border: 2px dashed black;
 }
