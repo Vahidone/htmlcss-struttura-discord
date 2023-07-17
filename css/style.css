@@ -105,24 +105,29 @@ footer .section-top{
   border-bottom: 2px solid #CCCECE;
   display: flex;
   justify-content: center;
+  align-items: stretch;
   background-color: #23272A;
 }
-
-.col-red{
-  width: 373px;
+.box-columns{
+  width: 1247px;
   height: 600px;
-  background-color: #EF8080;
-  border: 2px dashed black;
+  display: flex;
+  align-items: stretch;
+  flex-flow: row nowrap;
+  border: 3px dashed black;
   margin-top: 10px;
   margin-bottom: 42px;
 }
-footer .col{
-  width: 218px;
-  height: 600px;
+
+#red-col{
+  flex-basis: 372px;
+  background-color: #EF8080;
+  border: 3px dashed black;
+}
+.col{
+  width: calc(100% / 5);
   background-color: #21B1A9;
   border: 2px dashed white;
-  margin-top: 10px;
-  margin-bottom: 42px;
 }
 footer .section-down{
   width: 100%;
