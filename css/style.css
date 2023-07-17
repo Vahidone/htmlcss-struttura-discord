@@ -29,6 +29,7 @@ header .login-right{
   width: 247px;
   height: 47px;
   line-height: 47px;
+  font-size: 20px;
   background-color: #DAA420;
   border: 2px dashed black;
   padding-left: 12px;
