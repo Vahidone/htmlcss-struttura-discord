@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 header{
   width: 100%;
   height: 607px;
@@ -13,19 +16,29 @@ header{
   padding-top: 18px;
 }
 header .links{
-  display: flex;
-  flex: 0 0 750px;
+  width: 750px;
   height: 47px;
+  text-align: center;
+  line-height: 47px;
+  font-size: 20px;
   background-color: #DAA420;
   border: 2px dashed black;
 }
 header .logo-left,
-header .logo-right{
+header .login-right{
   width: 247px;
   height: 47px;
+  line-height: 47px;
   background-color: #DAA420;
   border: 2px dashed black;
+  padding-left: 12px;
 }
+
+header .login-right{
+  text-align: end;
+  padding-right: 12px;
+}
+
 header .box-blue{
   width: 100%;
   height: 520px;
@@ -129,12 +142,20 @@ footer .section-down{
 .bottom-logo{
   width: 68px;
   height: 36px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 20px;
+  color: #23272A;
   background-color: #FFB6C0;
   border: 2px dashed black;
 }
 .bottom-bottone{
   width: 94px;
   height: 36px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 36px;
+  color: color: #23272A;;
   background-color: #FFB6C0;
   border: 2px dashed black;
 }
