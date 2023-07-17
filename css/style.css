@@ -84,3 +84,8 @@ header .box-violet{
   background-color: #228B21;
   border: 2px dashed black;
 }
+footer{
+  width: 100%;
+  height: 770px;
+  background-color: #23272A;
+}
