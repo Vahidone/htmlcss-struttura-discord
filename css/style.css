@@ -4,164 +4,108 @@
   box-sizing: border-box;
 }
 body{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-header{
-  width: 100%;
-  height: 607px;
-  background-color: #ADD8E5;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 18px;
-}
-header .links{
-  width: 750px;
-  height: 47px;
-  text-align: center;
-  line-height: 47px;
-  font-size: 20px;
-  background-color: #DAA420;
-  border: 2px dashed black;
-}
-header .logo-left,
-header .login-right{
-  width: 247px;
-  height: 47px;
-  line-height: 47px;
-  font-size: 20px;
-  background-color: #DAA420;
-  border: 2px dashed black;
-  padding-left: 12px;
+.container{
+  width: 98%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-header .login-right{
-  text-align: end;
-  padding-right: 12px;
+.d-flex{
+  display: flex;
 }
 
-header .box-blue{
-  width: 100%;
-  height: 520px;
-  background-color: #01008B;
-  margin-top: 18px;
-  display: flex;
+.big-column{
+  width: 60%;
+}
+.small-column{
+  width: 40%;
+}
+.big-grey{
+  background-color: #f6f6f6;
+}
+.debug-box{
+  background-color: rgba(255, 0, 0, .2);
+  border: 1px solid black;
+}
+.debug > div{
+  border: 1px solid black;
+}
+
+
+/* header  */
+header .topbar {
+  background-color: #255EE9;
+  height: 80px;
+}
+header .topbar .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.menu ul{
+  list-style: none;
+}
+
+.menu ul li{
+  padding: 0 15px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: black;
+}
+#jumbtron{
+  height: 500px;
+  background-color: #255EE9;
   justify-content: center;
   align-items: center;
 }
-header .box-violet{
-  width: 945px;
-  height: 414px;
-  background-color: #EE82ED;
-  border: 2px dashed black;
+#jumbtron .content{
+  width: 90%;
+  max-width: 900px;
 }
-.white-area{
-  background-color: white;
-  width: 100%;
-  height: 624px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box-sky{
-  width: 748px;
-  height: 517px;
-  background-color: #1B90FF;
-  border: 2px dashed black;
-}
-.box-pink{
-  width: 497px;
-  height: 517px;
-  background-color: #FEBFCA;
-  border: 2px dashed black;
-}
-.grey-area{
-  background-color: #D3D3D3;
-  width: 100%;
-  height: 624px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-.big-grey-area{
-  width: 100%;
-  height: 1040px;
-  background-color: #D3D3D3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box-green{
-  width: 1247px;
-  height: 935px;
-  background-color: #228B21;
-  border: 2px dashed black;
+ 
+  /* main  */
+  section,
+  footer {
+    padding: 40px 0;
+  }
+  section .container{
+    height: 400px; /*debug*/ 
+  }
+
+  section:last-child .container{
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  /* footer  */
+  
+  footer{ 
+    height: 600px;
+    color: white;
+    background-color: #24272A;
+  }
+
+.footer-top{
+  height: 400px;
 }
 
-footer .section-top{
-  width: 100%;
-  height: 655px;
-  border-bottom: 2px solid #CCCECE;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  background-color: #23272A;
-}
-.box-columns{
-  width: 1247px;
-  height: 600px;
-  display: flex;
-  align-items: stretch;
-  flex-flow: row nowrap;
-  border: 3px dashed black;
-  margin-top: 10px;
-  margin-bottom: 42px;
+.footer-top .social{
+  width: 25%;
 }
 
-#red-col{
-  flex-basis: 372px;
-  background-color: #EF8080;
-  border: 3px dashed black;
+.footer-top .menu{
+  width: 75%;
 }
-.col{
-  width: calc(100% / 5);
-  background-color: #21B1A9;
-  border: 2px dashed white;
-}
-footer .section-down{
-  width: 100%;
-  height: 112px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-color: #23272A;
+
+.footer-top .menu .col{
+  flex-basis: 25%;
 }
 .footer-bottom{
-  width: 1247px;
-  height: 82px;
-  background-color: #7FFFD3;
-  display: flex;
-  align-items: center;
+  padding: 10px 0;
   justify-content: space-between;
-}
-.bottom-logo{
-  width: 68px;
-  height: 36px;
-  text-align: center;
-  line-height: 36px;
-  font-size: 20px;
-  color: #23272A;
-  background-color: #FFB6C0;
-  border: 2px dashed black;
-}
-.bottom-bottone{
-  width: 94px;
-  height: 36px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 36px;
-  color: color: #23272A;;
-  background-color: #FFB6C0;
-  border: 2px dashed black;
 }
